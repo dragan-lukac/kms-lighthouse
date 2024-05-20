@@ -4,7 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6cc77c1-55dd-412c-968a-516b0c30c240" name="Changes" comment="Add maven support&#10;Add dependencies&#10;Add .gitignore" />
+    <list default="true" id="f9798130-bd62-433d-a3b9-46337d1ef30d" name="Changes" comment="Implement first test">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kms-lightouse/src/main/java/com/kmslh/page/Accessibility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kms-lightouse/src/main/java/com/kmslh/page/BasePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kms-lightouse/src/main/java/com/kmslh/page/Header.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kms-lightouse/src/main/java/com/kmslh/sevice/AccessibilityService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kms-lightouse/src/main/java/com/kmslh/sevice/AssertionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kms-lightouse/src/main/java/com/kmslh/sevice/HeaderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kms-lightouse/src/main/java/com/kmslh/util/PropertyManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kms-lightouse/src/main/resources/configuration.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kms-lightouse/src/test/java/common/BrowserSetup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kms-lightouse/src/test/java/test/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kms-lightouse/src/test/java/test/SelectPageTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kms-lightouse/target/classes/com/kmslh/page/Accessibility.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kms-lightouse/target/classes/com/kmslh/page/BasePage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kms-lightouse/target/classes/com/kmslh/page/Header.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kms-lightouse/target/classes/com/kmslh/sevice/AccessibilityService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kms-lightouse/target/classes/com/kmslh/sevice/AssertionService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kms-lightouse/target/classes/com/kmslh/sevice/HeaderService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kms-lightouse/target/classes/com/kmslh/util/PropertyManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kms-lightouse/target/classes/configuration.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kms-lightouse/target/test-classes/common/BrowserSetup.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kms-lightouse/target/test-classes/test/BaseTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kms-lightouse/target/test-classes/test/SelectPageTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kms-lightouse/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/kms-lightouse/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kms-lightouse/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/kms-lightouse/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kms-lightouse/src/main/java/org/example/Main.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,71 +41,44 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 3
-}</component>
-  <component name="ProjectId" id="2geWUGBoGnpOTBju3rd6G2lLPyx" />
-  <component name="ProjectViewState">
-    <option name="showLibraryContents" value="true" />
-  </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/dragan/Documents/projects/kms-lighthouse",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "MavenSettings"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.SelectPageTest.executor": "Run",
+    "TestNG.SelectPageTest.selectProducts.executor": "Run"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-    </key>
-  </component>
   <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="kms-lighthouse" />
+    <configuration name="SelectPageTest.selectProducts" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="kms-lightouse" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.SelectPageTest" />
+      <option name="METHOD_NAME" value="selectProducts" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="kms-lighthouse" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.SelectPageTest.selectProducts" />
+      </list>
+    </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="a6cc77c1-55dd-412c-968a-516b0c30c240" name="Changes" comment="" />
-      <created>1716058537906</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1716058537906</updated>
-    </task>
-    <task id="LOCAL-00001" summary="Add maven support&#10;Add dependencies&#10;Add .gitignore">
-      <option name="closed" value="true" />
-      <created>1716059855506</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1716059855506</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Initial commit" />
-    <MESSAGE value="Add maven support&#10;Add dependencies&#10;Add .gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add maven support&#10;Add dependencies&#10;Add .gitignore" />
+    <MESSAGE value="Move .gitignore and README.md" />
+    <MESSAGE value="Implement first test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement first test" />
   </component>
 </project>
