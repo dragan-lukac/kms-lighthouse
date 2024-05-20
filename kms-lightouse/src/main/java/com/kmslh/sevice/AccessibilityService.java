@@ -15,7 +15,6 @@ public class AccessibilityService extends Accessibility {
     public void assertAccessibilityButtonIsPresent() {
         waitToBeVisible(cloud);
         scroll();
-        waitToBeVisible(accessibilityButton);
         assertionService.assertElementIsPresent(accessibilityButton);
     }
 }

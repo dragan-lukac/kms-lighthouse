@@ -15,4 +15,8 @@ public class HeaderService extends Header {
     public void clickOnProducts() {
         clickElement(burgerMenuProductsLink);
     }
+
+    public void assertKmsLighthouseLogoIsPresent() {
+        assertionService.assertElementIsPresent(kmsLighthouseLogo);
+    }
 }

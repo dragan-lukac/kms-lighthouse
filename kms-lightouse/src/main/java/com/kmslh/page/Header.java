@@ -16,6 +16,8 @@ public class Header extends BasePage{
     protected By burgerMenuAboutLink = By.xpath(mobileOnly + "a[contains(text(), 'About')]");
     protected By burgerMenuRequestADemoLink = By.xpath(mobileOnly + "a[contains(text(), 'Request a Demo')]");
 
+    protected By kmsLighthouseLogo = By.id("logo");
+
     public Header(WebDriver driver) {
         super(driver);
     }
