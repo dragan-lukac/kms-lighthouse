@@ -18,6 +18,9 @@ public class BaseTest extends BrowserSetup {
             case "chrome":
                 startChrome();
                 break;
+            case "firefox":
+                startFirefox();
+                break;
             default:
                 startChrome();
                 System.out.println("Selected browser is not supported, starting tests on chrome");
@@ -25,6 +28,7 @@ public class BaseTest extends BrowserSetup {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
         driver.get(PropertyManager.getInstance().getUrl());
     }
+
     @AfterMethod
     public void tearDown() {
         driver.quit();
