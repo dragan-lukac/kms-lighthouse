@@ -2,6 +2,7 @@ package test;
 
 import com.kmslh.util.PropertyManager;
 import common.BrowserSetup;
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
@@ -29,6 +30,10 @@ public class BaseTest extends BrowserSetup {
     @AfterMethod
     public void tearDown() {
         driver.quit();
+    }
+
+    public WebDriver getDriver() {
+        return driver;
     }
 
 }
