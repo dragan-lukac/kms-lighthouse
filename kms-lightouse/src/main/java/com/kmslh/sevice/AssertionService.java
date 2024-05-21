@@ -17,4 +17,13 @@ public class AssertionService {
         basePage.waitToBeVisible(by);
         Assert.assertTrue(driver.findElement(by).isDisplayed());
     }
+
+    public void assertMandatoryElementsArePresent() {
+        AccessibilityService accessibilityService = new AccessibilityService(driver);
+        HeaderService headerService = new HeaderService(driver);
+        FooterService footerService = new FooterService(driver);
+        accessibilityService.assertAccessibilityButtonIsPresent();
+        headerService.assertKmsLighthouseLogoIsPresent();
+        footerService.assertContactUsIsPresent();
+    }
 }
