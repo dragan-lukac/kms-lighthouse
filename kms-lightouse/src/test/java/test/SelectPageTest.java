@@ -1,8 +1,6 @@
 package test;
 
-import com.kmslh.sevice.AccessibilityService;
 import com.kmslh.sevice.AssertionService;
-import com.kmslh.sevice.FooterService;
 import com.kmslh.sevice.HeaderService;
 import org.testng.annotations.Test;
 

@@ -20,7 +20,6 @@ public class PropertyManager {
             instance = new PropertyManager();
             instance.loadData();
         }
-        System.out.println(instance);
         return instance;
     }
 
