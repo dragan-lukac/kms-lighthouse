@@ -25,5 +25,7 @@ public class AssertionService {
         accessibilityService.assertAccessibilityButtonIsPresent();
         headerService.assertKmsLighthouseLogoIsPresent();
         footerService.assertContactUsIsPresent();
+        headerService.openBurgerMenu();
+        headerService.assertRequestADemoButtonIsPresent();
     }
 }

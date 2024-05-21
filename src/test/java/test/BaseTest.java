@@ -7,8 +7,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
-import java.time.Duration;
-
 public class BaseTest extends BrowserSetup {
 
     @Parameters({"browser"})
@@ -25,7 +23,6 @@ public class BaseTest extends BrowserSetup {
                 startChrome();
                 System.out.println("Selected browser is not supported, starting tests on chrome");
         }
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
         driver.get(PropertyManager.getInstance().getUrl());
     }
 

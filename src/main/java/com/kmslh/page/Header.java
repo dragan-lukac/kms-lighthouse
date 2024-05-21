@@ -17,6 +17,7 @@ public class Header extends BasePage{
     protected By burgerMenuRequestADemoLink = By.xpath(mobileOnly + "a[contains(text(), 'Request a Demo')]");
 
     protected By kmsLighthouseLogo = By.id("logo");
+    protected By requestADemoButton = By.xpath("//div[@class='mobile-only']//a[@href='/request-a-demo/']");
 
     public Header(WebDriver driver) {
         super(driver);
